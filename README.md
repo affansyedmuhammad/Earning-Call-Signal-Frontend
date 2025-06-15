@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# Earning Call Signal Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## What the app does
+This is the frontend application for the Earning Call Signal project. It is a React-based web application designed to display and interact with data related to earning calls, processed and provided by a backend service.
 
-## Available Scripts
+## How to run it locally
+To run this application locally, follow these steps:
 
-In the project directory, you can run:
+1.  **Prerequisites**: Ensure you have Node.js and npm installed on your system.
+2.  **Install Dependencies**: Navigate to the project's root directory in your terminal and install the necessary dependencies:
+    ```bash
+    npm install
+    ```
+3.  **Start the Development Server**: Once the dependencies are installed, start the application:
+    ```bash
+    npm start
+    ```
+    This will typically open the application in your browser at `http://localhost:3000`.
 
-### `npm start`
+## Any AI/NLP tools, APIs, or models used
+This frontend application primarily focuses on data presentation and user interaction. It is designed to consume data from a backend API, which is likely where any AI/NLP tools, APIs, or models for processing earning call signals are utilized. The frontend itself does not directly implement AI/NLP functionalities.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Key assumptions or limitations
+*   **Backend Dependency**: This frontend application assumes the existence of a compatible backend API that provides the necessary earning call data. Without the backend, the application will not function as intended.
+*   **Data Format**: It assumes the data received from the backend adheres to a specific JSON structure for proper rendering.
+*   **Scalability**: Current implementation might not be optimized for extremely large datasets without further performance considerations.
+*   **Error Handling**: Basic error handling is in place, but comprehensive error management for all possible API responses or network issues might require further development.
+*   **User Authentication/Authorization**: No Authentication/Authorization mechanisms are implemented.
