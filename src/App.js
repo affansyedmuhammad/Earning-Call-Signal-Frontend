@@ -39,7 +39,7 @@ const EarningsDashboard = () => {
   }, [ticker]);
 
   if (loading) return <div className="p-6">Loading analysis for {ticker.toUpperCase()}...</div>;
-  if (error) return <div className="p-6 text-red-600">Error: {error}</div>;
+  if (error) return <div className="p-6 text-red-600">Error: We are facing an issue right now. Try again later.</div>;
 
   // Transform data for charts
   const chartData = Object.keys(sentimentData.signals).map(quarter => ({
