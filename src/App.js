@@ -17,12 +17,12 @@ const EarningsDashboard = () => {
       setError(null);
       try {
         // 1) Sentiment API
-        const sentRes = await fetch(`/analysis/${ticker}`);
+        const sentRes = await fetch(`http://52.91.87.3:8000/analysis/${ticker}`);
         if (!sentRes.ok) throw new Error(`Sentiment API error: ${sentRes.status}`);
         const sentJson = await sentRes.json();
         
         // 2) Transcript API
-        const transRes = await fetch(`/getTranscripts/${ticker}`);
+        const transRes = await fetch(`http://52.91.87.3:8000/getTranscripts/${ticker}`);
         if (!transRes.ok) throw new Error(`Transcript API error: ${transRes.status}`);
         const transJson = await transRes.json();
         
