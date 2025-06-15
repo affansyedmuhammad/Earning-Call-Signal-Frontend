@@ -7,11 +7,12 @@ This is the frontend application for the Earning Call Signal project. It is a Re
 To run this application locally, follow these steps:
 
 1.  **Prerequisites**: Ensure you have Node.js and npm installed on your system.
-2.  **Install Dependencies**: Navigate to the project's root directory in your terminal and install the necessary dependencies:
+2. Clone the repository
+3.  **Install Dependencies**: Navigate to the project's root directory in your terminal and install the necessary dependencies:
     ```bash
     npm install
     ```
-3.  **Start the Development Server**: Once the dependencies are installed, start the application:
+4.  **Start the Development Server**: Once the dependencies are installed, start the application:
     ```bash
     npm start
     ```
