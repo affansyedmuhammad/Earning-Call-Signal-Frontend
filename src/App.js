@@ -100,7 +100,7 @@ const EarningsDashboard = () => {
         {items.map((item, index) => (
           <div key={index} className="bg-gray-50 rounded-lg p-4">
             <div className="font-medium text-gray-900 mb-2">{item.speaker}</div>
-            <div className="text-gray-700 leading-relaxed">{item.text}</div>
+            <div className="text-gray-700 leading-relaxed  text-justify">{item.text}</div>
           </div>
         ))}
       </div>
